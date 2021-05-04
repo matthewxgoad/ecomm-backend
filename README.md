@@ -2,7 +2,7 @@
 
 [![License: MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Animated GIF of application](/images/employee-tracker-demo.gif)
+![Animated GIF of application](/images/app-screenshot.png)
 
 [Click here for a video walkthrough of the application.](https://youtu.be/Lto5yP7vWDg)
 
@@ -11,8 +11,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributors](#contributors)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ## Description
