@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
   Product.findAll({
-    inlude: [Category, {
+    include: [Category, {
       model: Tag,
       through: ProductTag
     }]
@@ -26,7 +26,7 @@ router.get('/:id', (req, res) => {
     include: [Category, {
       model: Tag,
       through: ProductTag,
-      as: "product_id"
+      // as: "product_id"
     }]
   })
   .then((data) => {
@@ -110,6 +110,15 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
+  Product.destroy({
+    where: {
+      id: req.params.id
+    }
+  })
+  .then((product) => {
+    res.json(product)
+  })
+  .catch((err) => res.json(err));
 });
 
 module.exports = router;
